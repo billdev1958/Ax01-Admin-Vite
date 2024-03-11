@@ -1,4 +1,3 @@
-import React from "react";
 import logo from "../images/20231223_170621_0000-removebg-preview.png";
 
 function Homepage() {

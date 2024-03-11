@@ -1,4 +1,3 @@
-import React from "react";
 import IonIcon from "@reacticons/ionicons";
 import { NavLink, useNavigate } from "react-router-dom";
 import { AuthService } from "../services/authentication";

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import IonIcon from "@reacticons/ionicons";
 
 interface Category {
@@ -9,7 +9,6 @@ function TableComponent() {
   const [showInput, setShowInput] = useState<boolean>(false);
   const [categories, setCategories] = useState<Category[]>([]);
   const [newCategoryName, setNewCategoryName] = useState<string>("");
-  const [successMessage, setSuccessMessage] = useState<string>("");
 
   // Get categories
   useEffect(() => {

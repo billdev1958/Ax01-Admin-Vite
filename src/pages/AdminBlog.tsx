@@ -1,5 +1,5 @@
 import CardBlog from "../components/CardBlog";
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import logo from "../images/20231223_170621_0000-removebg-preview.png";
 
 interface BlogPost {
