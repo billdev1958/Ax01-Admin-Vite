@@ -1,0 +1,52 @@
+.mainContent {
+    width: 100%;
+   
+}
+
+.Header {
+    width: auto;
+}
+
+.textTitle {
+    text-align: center;
+    color: white;
+    margin-top: 10px; 
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-left: 50%;
+    transform: translateX(-50%); 
+    width: 200px;
+}
+
+.gridHome {
+    margin-left: 50%;
+    transform: translateX(-50%); 
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 8%; 
+}
+
+.gridCard{
+    background-color: white;
+    color: black;
+    width: 30%; /* Ajusta el ancho de las tarjetas según tus necesidades */
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin: 2px; /* Ajusta el margen entre las tarjetas */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente en cada tarjeta */
+    text-align: center; 
+}
+
+.siteData{
+    margin: 0;
+}

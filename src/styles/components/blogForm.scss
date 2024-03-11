@@ -1,0 +1,53 @@
+.HeaderG{
+    margin-bottom: 50px;
+}
+.centerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.formContainer {
+  width: 90%; // Limita el ancho del formulario para dispositivos grandes
+  max-width: 600px; // No permitas que el formulario sea demasiado ancho
+  margin: auto; // Centra el formulario en la página
+  padding: 2rem; // Añade padding alrededor del formulario
+  background: white; // Fondo claro para el formulario sobre fondo oscuro
+  border-radius: 8px; // Bordes redondeados para el formulario
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Sombra sutil para levantar el formulario del fondo
+}
+
+.inputGroup {
+  margin-bottom: 10px;
+}
+
+.inputField
+{
+  width: 100%; // Asegúrate de que los campos ocupen el ancho disponible
+  padding: 0.5rem; // Padding para los campos de entrada
+  border: 1px solid #ccc; // Borde sutil para los campos
+  border-radius: 4px; // Bordes ligeramente redondeados para los campos
+}
+.textAreaField {
+  width: 100%; // Esto hará que el área de texto se expanda para ocupar el ancho disponible de su contenedor
+  min-height: 200px; // Ajusta esto según necesites para aumentar la altura
+  margin-top: 5px;
+  border: 1px solid #ccc; // Añade un borde sutil, opcional
+  padding: 10px; 
+}
+.submitButton {
+  padding: 0.75rem 1.5rem; // Aumenta el padding del botón
+  font-weight: bold; // Hace el texto del botón más audaz
+  background-color: #0056b3; // Usa un color principal para el botón
+  color: white; // Texto blanco para el botón
+  border: none; // Sin bordes para el botón
+  border-radius: 4px; // Bordes redondeados para el botón
+  margin-top: 1rem; // Añade margen superior para separar del último campo
+  transition: background-color 0.3s ease; // Suaviza la transición de color
+
+  &:hover {
+    background-color: #003580; // Oscurece el botón al pasar el cursor sobre él
+  }
+
+}

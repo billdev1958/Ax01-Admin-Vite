@@ -1,0 +1,20 @@
+.NavMenu{
+    padding-top: 4%;
+    display: flex;
+    width: 70px;
+    height: 100vh;
+    background-color: #0d1117;
+    color: antiquewhite;
+}
+
+.NavMenu ul{
+    
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    
+}
+
+.NavMenu ul li {
+    margin-bottom: 10px; /* Agregar margen inferior para separar verticalmente los botones */
+  }

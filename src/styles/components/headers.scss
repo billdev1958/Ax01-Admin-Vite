@@ -1,0 +1,32 @@
+.headerV {
+    display: flex; /* Usamos flex para poder alinear los elementos verticalmente */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: center; /* Centra los elementos en el eje transversal (horizontal) */
+    width: 20%; /* Establece el ancho del contenedor a 20% de su contenedor padre */
+    padding: 1rem; /* Añade un poco de espacio interno */
+  }
+  
+  .TitleHeaderV h1 {
+    text-align: center; /* Asegura que el texto del título esté centrado */
+    margin-top: 0.5rem;
+    color: white; /* Añade un espacio arriba del título si es necesario */
+  }
+
+  @media (min-width: 768px) {
+    .Header {
+      flex-direction: row; /* Cambia la dirección de nuevo a row */
+      justify-content: center; /* Centra los elementos horizontalmente */
+      align-items: center; /* Alinea los elementos verticalmente */
+    }
+    
+    .textTitle {
+      margin-top: 0; /* Restablece el margen superior */
+      margin-left: 1rem; /* Añade espacio a la izquierda del título */
+      text-align: left; /* Alinea el texto a la izquierda */
+    }
+  }
+
+  .headerV{
+    width: 20%;
+  }
+  

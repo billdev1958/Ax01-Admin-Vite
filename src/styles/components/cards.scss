@@ -1,0 +1,129 @@
+.buttonCard {
+    background-color: white;
+    color: black;
+    width: 35%; /* Ajusta el ancho de las tarjetas según tus necesidades */
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin: 2px; /* Ajusta el margen entre las tarjetas */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente en cada tarjeta */
+    text-align: center; 
+    cursor: pointer;
+}
+
+.urlPages {
+    text-decoration: none;
+}
+
+.buttonCard:hover {
+    color: black;
+    background-color: white;
+}
+
+.NavMenu a.active .buttonMenu {
+    background-color: #e0e0e0;  /* Cambia el color de fondo cuando el enlace está activo */
+    color: black;
+}
+
+.gridContent {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 2rem 2rem 0; /* Añade padding en todos los lados excepto a la izquierda */
+    align-items: start; /* Asegura que los elementos comiencen desde la parte superior */
+    width: 100%; 
+  }
+  
+  .section-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Crea una cuadrícula fluida */
+    gap: 1rem;
+    width: 100%;
+    margin: 0; /* Elimina cualquier margen externo */
+  }
+
+.cardBlog-container {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+  }
+
+  .cardBlog-icons {
+    display: none; /* Ocultar por defecto */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; /* Centra absolutamente en todas direcciones */
+    z-index: 10;
+    justify-content: center; /* Alinear horizontalmente */
+    align-items: center; /* Alinear verticalmente */
+}
+  
+.cardBlog-container:hover {
+  transform: translateY(-5px); /* Efecto de elevación al hacer hover */
+}
+
+  .cardBlog-container:hover  .cardBlog-icons {
+    display: flex; /* Mostrar iconos al hacer hover */
+    gap: 10px; /* Espacio entre iconos */
+  }
+
+  .icon-edit, .icon-delete {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    padding: 0.5rem;
+    font-size: 0.875rem;
+    cursor: pointer; /* Estilo del cursor como indicativo de acción */
+}
+  
+.cardBlog-image {
+  position: relative; /* Contexto de posicionamiento para los iconos */
+  background-color: #eee;
+  border-radius: 4px;
+  height: 200px;
+  margin-bottom: 1rem;
+  width: 100%;
+  display: flex; /* Asegura el centrado vertical */
+  align-items: center; /* Centrado vertical */
+  justify-content: center; /* Centrado horizontal */
+}
+  
+  .cardBlog-content {
+    flex-grow: 1;
+  }
+  
+  .cardBlog-title {
+    color: #333;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cardBlog-resume {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cardBlog-footer {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
+  .cardBlog-author, .cardBlog-category, .cardBlog-published {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }

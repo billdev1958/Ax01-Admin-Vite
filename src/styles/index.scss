@@ -1,0 +1,32 @@
+@use "./components/sideBar.scss";
+@use "./components/buttons.scss";
+@use "./components/cards.scss";
+@use "./components/forms.scss";
+@use "./components/tableComponent.scss";
+@use "./components/blogForm.scss";
+@use "./components/headers.scss";
+
+
+
+
+@use "./pages/homepage.scss";
+@use "./pages/login.scss";
+
+
+@use "./reset.scss";
+
+body{
+    background-color: #151a21;
+}
+
+
+
+
+.main{
+    width: 100%;
+    display: flex;
+}
+
+.root{
+    width: 100vh;
+}

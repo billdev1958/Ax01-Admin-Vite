@@ -1,0 +1,36 @@
+.loginContent {
+    width: 100%;
+   
+}
+
+
+
+.loginForm{
+    max-width: 400px; /* Ajusta el ancho máximo del formulario según sea necesario */
+    margin: 0 auto; /* Centra el formulario horizontalmente en la página */
+    padding: 20px;
+    background-color: #151a21; /* Cambia el color de fondo del formulario */
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginForm label{
+    display: block;
+}
+
+.loginInput{
+    display: block;
+}
+
+.buttonLogin{
+    background-color: #4caf50; /* Cambia el color de fondo del botón de envío */
+    color: #fff; /* Cambia el color del texto del botón de envío */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón de envío */
+    border: none; /* Elimina el borde del botón de envío */
+    border-radius: 4px; /* Agrega esquinas redondeadas al botón de envío */
+    padding: 10px 15px;
+}
+

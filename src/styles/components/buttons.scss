@@ -1,0 +1,27 @@
+.buttonMenu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 50px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background-color: black;  /* Establece el color de fondo predeterminado */
+    text-decoration: none;
+
+}
+
+.urlPages {
+    text-decoration: none;
+}
+
+.buttonMenu:hover {
+    color: black;
+    background-color: white;
+}
+
+.NavMenu a.active .buttonMenu {
+    background-color: #e0e0e0;  /* Cambia el color de fondo cuando el enlace está activo */
+    color: black;
+}
