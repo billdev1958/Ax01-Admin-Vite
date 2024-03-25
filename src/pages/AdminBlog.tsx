@@ -17,7 +17,7 @@ const AdminBlog = () => {
   useEffect(() => {
     const fetchBlogPosts = async () => {
       const token = localStorage.getItem("token");
-      const response = await fetch("http://localhost:8080/api/posts/get", {
+      const response = await fetch("https://api.ax01.dev/posts/get", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -36,7 +36,7 @@ const AdminBlog = () => {
   }, []);
   const deleteBlogPost = async (id: number) => {
     const token = localStorage.getItem("token");
-    const response = await fetch(`http://localhost:8080/api/posts/delete?id=${id}`, {
+    const response = await fetch(`https://api.ax01.dev/posts/delete?id=${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

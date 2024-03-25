@@ -1,30 +1,38 @@
-# React + TypeScript + Vite
+# Guía de Pruebas para Desarrollo: Ax01-Admin-Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Introducción
 
-Currently, two official plugins are available:
+Esta guía está diseñada para facilitar el desarrollo y las pruebas con el sistema Ax01-Admin-Vite. Es importante trabajar con el branch `develop` para el desarrollo local, ya que el branch `main` está destinado a la producción y presenta diferencias significativas que pueden influir en la ejecución del proyecto en entornos de desarrollo.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Requerimientos
 
-## Expanding the ESLint configuration
+Para comenzar el desarrollo con Ax01-Admin-Vite, se requiere lo siguiente:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Un navegador de internet es el único requisito para trabajar con este sistema.
 
-- Configure the top-level `parserOptions` property like this:
+## Configuración del Entorno de Pruebas
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Sigue estos pasos para preparar tu entorno de desarrollo y comenzar con las pruebas de forma local:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. **Clonar el Repositorio**: Asegúrate de obtener la última versión del branch `develop` para acceder a las funcionalidades y correcciones más recientes.
+2. **Instalación de Dependencias**:
+   - Accede a la carpeta del proyecto clonado.
+   - Ejecuta `npm i` para instalar todas las dependencias necesarias.
+3. **Ejecución en Modo Local**:
+   - Inicia el proyecto en modo de desarrollo con `npm run dev`.
+   - Navega a la URL proporcionada en la consola (usualmente `http://localhost:3000`) para acceder a la aplicación desde tu navegador.
+
+## Flujo de Desarrollo y Pruebas
+
+Con el entorno ya configurado, estás listo para comenzar a desarrollar y probar localmente. Asegúrate de adherirte a las mejores prácticas de desarrollo y usar las herramientas a tu disposición para validar las implementaciones.
+
+- **Desarrollo Local**: Implementa cambios en el código dentro del branch `develop`. Este método asegura que cualquier modificación pueda ser exhaustivamente probada antes de ser combinada con el branch `main`.
+- **Pruebas**: Aunque este proyecto se ejecuta principalmente en el navegador y no tiene una API que probar con Postman, puedes utilizar herramientas de desarrollo del navegador para monitorear el rendimiento, revisar los errores de JavaScript y simular diferentes dispositivos para pruebas de responsividad.
+
+## Preguntas Frecuentes (FAQ)
+
+*Aquí, podrías agregar preguntas específicas relacionadas con Ax01-Admin-Vite, similar a la sección de FAQ proporcionada para `ax01-server`, ajustando las respuestas a las particularidades de este proyecto.*
+
+## Conclusión
+
+Siguiendo esta guía, los desarrolladores pueden configurar eficientemente su entorno de desarrollo para Ax01-Admin-Vite y asegurar un flujo de trabajo de pruebas efectivo. Este enfoque facilita el proceso de desarrollo, permitiendo una transición suave hacia la implementación de nuevas funcionalidades y la corrección de errores.
