@@ -1,12 +1,16 @@
 export const AuthService = {
-    login: async (username: string, password: string): Promise<string | null> => {
+    login: async (username: string, hash: string): Promise<string | null> => {
       try {
+<<<<<<< HEAD
         const response = await fetch("https://api.ax01.dev/api/login", {
+=======
+        const response = await fetch("https://api.ax01.dev/login", {
+>>>>>>> 05eac1a8177809b8637ae3feef7d807c19afcf6a
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({ username, password }),
+          body: JSON.stringify({ username, hash }),
         });
   
         if (response.ok) {
