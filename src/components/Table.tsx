@@ -16,7 +16,7 @@ function TableComponent() {
       const token = localStorage.getItem("token"); // Obtén el token desde donde lo tengas almacenado
       try {
         const response = await fetch(
-          "http://localhost:8080/api/categories/get",
+          "https://api.ax01.dev/categories/get",
           {
             method: "GET", // Método HTTP
             headers: {
@@ -48,7 +48,7 @@ function TableComponent() {
     const token = localStorage.getItem("token");
     try {
       const response = await fetch(
-        "http://localhost:8080/api/category/create",
+        "https://api.ax01.dev/category/create",
         {
           method: "POST",
           headers: {
@@ -88,7 +88,7 @@ function TableComponent() {
     const token = localStorage.getItem("token");
     try {
       const response = await fetch(
-        `http://localhost:8080/api/category/delete?id=${id}`,
+        `https://api.ax01.dev/api/category/delete?id=${id}`,
         {
           method: "DELETE",
           headers: {

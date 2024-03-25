@@ -25,7 +25,7 @@ function UpdatePage() {
       const token = localStorage.getItem("token");
       try {
         const response = await fetch(
-          "http://localhost:8080/api/categories/get",
+          "https://api.ax01.dev/categories/get",
           {
             method: "GET",
             headers: {
@@ -51,7 +51,7 @@ function UpdatePage() {
         const token = localStorage.getItem("token");
         try {
           const response = await fetch(
-            `http://localhost:8080/api/posts/get/${id}`,
+            `https://api.ax01.dev/posts/get/${id}`,
             {
               method: "GET",
               headers: {
@@ -99,7 +99,7 @@ function UpdatePage() {
 
     const token = localStorage.getItem("token");
     try {
-      const response = await fetch(`http://localhost:8080/api/posts/patch`, {
+      const response = await fetch(`https://api.ax01.dev/posts/patch`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",

@@ -22,7 +22,7 @@ function UpBlog() {
       const token = localStorage.getItem("token");
       try {
         const response = await fetch(
-          "http://localhost:8080/api/categories/get",
+          "https://api.ax01.dev/categories/get",
           {
             method: "GET",
             headers: {
@@ -57,7 +57,7 @@ function UpBlog() {
 
     const token = localStorage.getItem("token");
     try {
-      const response = await fetch("http://localhost:8080/api/posts/create", {
+      const response = await fetch("https://api.ax01.dev/posts/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
