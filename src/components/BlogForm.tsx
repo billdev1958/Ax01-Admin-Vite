@@ -8,8 +8,6 @@ interface BlogFormProps {
   setSelectedCategory: (value: string) => void;
   title: string;
   setTitle: (value: string) => void;
-  description: string;
-  setDescription: (value: string) => void;
   content: string;
   setContent: (value: string) => void;
   authorId: string;
@@ -23,8 +21,6 @@ const BlogForm = ({
   setSelectedCategory,
   title,
   setTitle,
-  description,
-  setDescription,
   content,
   setContent,
   authorId,
@@ -61,17 +57,6 @@ const BlogForm = ({
               value={title}
               onChange={(e) => setTitle(e.target.value)}
               placeholder="Ingresa el título"
-            />
-          </div>
-          <div className="inputGroup">
-            <label htmlFor="description">Descripción del blog:</label>
-            <input
-              type="text"
-              id="description"
-              className="inputField"
-              value={description}
-              onChange={(e) => setDescription(e.target.value)}
-              placeholder="Ingresa la descripción"
             />
           </div>
           <div className="inputGroup">

@@ -135,8 +135,6 @@ function UpdatePage() {
         setSelectedCategory={setSelectedCategory}
         title={title}
         setTitle={setTitle}
-        description={description}
-        setDescription={setDescription}
         content={content}
         setContent={setContent}
         authorId={authorId}
