@@ -6,7 +6,6 @@ interface BlogPost {
   id: number;
   category: number;
   title: string;
-  resume: string;
   content: string;
   author: number;
   createdAt: string;
@@ -69,7 +68,6 @@ const AdminBlog = () => {
               id={post.id}
               key={post.id}
               title={post.title}
-              resume={post.resume}
               author={post.author.toString()}
               category={post.category.toString()}
               createdAt={post.createdAt}

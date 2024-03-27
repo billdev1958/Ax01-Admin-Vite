@@ -4,7 +4,6 @@ import { NavLink } from "react-router-dom";
 interface CardBlogProps {
   id: number;
   title: string;
-  resume: string;
   author: string;
   category: string;
   createdAt: string;
@@ -14,7 +13,6 @@ interface CardBlogProps {
 const CardBlog = ({
   id,
   title,
-  resume,
   author,
   category,
   createdAt,
@@ -32,7 +30,6 @@ const CardBlog = ({
       </div>
       <div className="cardBlog-content">
         <h3 className="cardBlog-title">{title}</h3>
-        <p className="cardBlog-resume">{resume}</p>
       </div>
       <div className="cardBlog-footer">
         <span className="cardBlog-author">Autor: {author}</span>
