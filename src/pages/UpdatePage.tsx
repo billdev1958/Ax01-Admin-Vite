@@ -15,7 +15,7 @@ function UpdatePage() {
   const [selectedCategory, setSelectedCategory] = useState<string>("");
   const [title, setTitle] = useState<string>("");
   const [content, setContent] = useState<string>("");
-  const [authorId, setAuthorId] = useState<string>("");
+  const [author, setAuthorId] = useState<string>("");
 
   let { id } = useParams();
 
@@ -50,7 +50,7 @@ function UpdatePage() {
         const token = localStorage.getItem("token");
         try {
           const response = await fetch(
-            `https://api.ax01.dev/posts/get/${id}`,
+            `https://api.ax01.dev/post/get/${id}`,
             {
               method: "GET",
               headers: {
@@ -91,7 +91,7 @@ function UpdatePage() {
       Category: parseInt(selectedCategory, 10),
       Title: title,
       Content: content,
-      Author: parseInt(authorId, 10),
+      Author: parseInt(author, 10),
     };
 
     const token = localStorage.getItem("token");
@@ -134,7 +134,7 @@ function UpdatePage() {
         setTitle={setTitle}
         content={content}
         setContent={setContent}
-        authorId={authorId}
+        authorId={author}
         setAuthorId={setAuthorId}
         handleSubmit={handleSubmit}
       />
