@@ -14,7 +14,6 @@ function UpdatePage() {
   const [categories, setCategories] = useState<Category[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<string>("");
   const [title, setTitle] = useState<string>("");
-  const [description, setDescription] = useState<string>("");
   const [content, setContent] = useState<string>("");
   const [authorId, setAuthorId] = useState<string>("");
 
@@ -64,7 +63,6 @@ function UpdatePage() {
             const postData: Post = await response.json();
             setSelectedCategory(postData.category.toString());
             setTitle(postData.title);
-            setDescription(postData.resume);
             setContent(postData.content);
             setAuthorId(postData.author.toString());
           } else {
@@ -92,7 +90,6 @@ function UpdatePage() {
       id: parseInt(id, 10),
       Category: parseInt(selectedCategory, 10),
       Title: title,
-      Resume: description,
       Content: content,
       Author: parseInt(authorId, 10),
     };
